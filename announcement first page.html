@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+ <head>
+   
+     <!---CSS for the first page of programe--->
+
+   <style>
+        body {
+          background-color: rgba(185, 242, 252, 0.897);
+        }
+        
+        h1 {
+          color: rgba(3, 1, 8, 0.897);
+          margin-left: 40px;
+        }
+        h2 {
+            color:rgb(14, 13, 13);
+            margin-left: 40px;
+        }
+   </style>
+  
+    <center>
+         <h1><em>Teacher's Announcement Creator Page</em></h1>
+         <h2>Welcome Teachers</h2>
+     </center>
+     
+       <!---Link to the js file--->
+
+       <script src="teacher.js"></script>
+
+ </head>
+
+ <!---Linking the function from the js file--->
+
+ <body onload ="getExistingData()">
+     <tr>
+      <center>
+         <h3>Filters</h3>
+
+           <!---The dropdow for choosing grade--->
+
+         <th scope="row"Select Grade></th> 
+             <select id="htmlTGrade"> 
+                 <option value="Select">Grade</option>
+                 <option value="Grade 9">Grade 9</option>
+                 <option value="Grade 10">Grade 10</option> 
+                 <option value="Grade 11">Grade 11</option> 
+                 <option value="Grade 12">Grade 12</option> 
+                 <option value="All">All</option> 
+             </select>
+
+             <!---The dropdow for choosing gender---> 
+         
+             <th scope="row"Select Gender></th>
+             <select id="htmlTGender"> 
+                 <option value="Select">Gender</option> 
+                 <option value="Boys">Boys</option> 
+                 <option value="Girls">Girls</option> 
+                 <option value="All">All</option>
+             </select>
+
+             <!---The dropdow for choosing club--->
+
+         <th scope="row"Select Club></th>
+              <select id="htmlTClub"> 
+                 <option value="Select">Club</option>
+                 <option value="Badminton">Badminton</option> 
+                 <option value="Soccer">Soccer</option> 
+                 <option value="DECA">DECA</option> 
+                 <option value="Eco">Eco</option> 
+                 <option value="All">All</option>
+              </select>
+     </center> 
+        <br> 
+     <center>
+
+       <h3>Add Announcement</h3>
+
+            <!---The textbox for the teachers to type in the announcements--->
+
+          <textarea id= "htmlTAnnouncement" rows="20" cols="65" 
+          placeholder="------------------Enter Announcement Details Here-----------------"></textarea>
+     </center>
+            <br>
+     <center>
+
+        <!---This is the button to save the data in local storage which also links this page to the function in .js file--->
+
+        <button onclick="getTeacherData()">Stream</button>
+     </center>
+ </body> 
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <center>
+    <h1><em>Student's Veweier Page</em></h1>
+    <h3>All Streamed Announcements</h3>
+ </center>
+ <br>
+
+ <!---Link to the js file--->
+
+ <script src="viewer.js"></script>
+
+  <!---Linking the function from the js file--->
+
+ <body onload ="displayAnnouncement()">
+   
+       <!---CSS for the third page of programe--->
+
+   <style>
+        body {
+          background-color: rgba(185, 242, 252, 0.897);
+        }
+        
+        h1 {
+          color: black(219, 212, 212);
+          margin-left: 40px;
+        }
+   </style>
+   
+   <center>
+
+      <!---The textbox for the students to type in comments on the announcements--->
+
+     <textarea id="htmlAllAnnouncements" rows="20" cols="60" 
+     placeholder="---------------------All Announcements---------------------"></textarea>
+   </center>
+   <br>
+   <center>
+
+      <!---The textbox where the announcement saved by the teachers will be 
+      displayed after compairing to the filters picked by the students--->
+
+     <textarea id= "htmlSComment" rows="1" cols="65" placeholder="-----------------------Enter comment here-----------------------"></textarea>  
+     <br>
+     <button onclick="SendComment()">Send</button>
+   </center>
+ </body> 
+</html
